@@ -6,42 +6,31 @@ age = current_year - birth_year
 # Natijani chiqaramiz
 print(f"Hello {name}, you are {age} years old.")
 ## 2. Extract Car Names
-txt = "LMaasleitbtui"
-target = "malibu"
-result = "
+txt = 'LMaasleitbtui'
+cars = ["Malibu", "Mazda", "BMW", "Audi", "Tesla"]
 
-j = 0   # targetdagi index
+txt_low = txt.lower()
 
-for ch in txt.lower():
-    if ch == target[j]:
-        result += ch
-        j += 1
-        if j == len(target):
-            break
-
-print(result)
+for car in cars:
+    if car.lower() in txt_low:
+        print(car)
 ## 3. Extract Car Names
 txt = 'MsaatmiazD'
-target = "matiz"
-result = ""
+cars = ["Malibu", "Mazda", "BMW", "Audi", "Tesla"]
 
-j = 0   # targetdagi index
+txt_low = txt.lower()
 
-for ch in txt.lower():
-    if ch == target[j]:
-        result += ch
-        j += 1
-        if j == len(target):
-            break
-
-print(result)
+for car in cars:
+    if car.lower() in txt_low:
+        print(car)
 ## 4. Extract Residence Area
 txt = "I'am John. I am from London"
-print(txt [-6:])
-## 5. Reverse String
-txt = input('enter text')
-reversed_txt = txt[::-1]
-print(reversed_txt)
+
+parts = txt.split("from")
+area = parts[1].strip()
+
+print(area)   # London
+
 ## 6. Count Vowels
 string = input('enter string')
 vowels = "aeiouAEIOU"
