@@ -9,9 +9,9 @@ mylist1 = [33,456,687]
 mylist2 =[78,98,645]
 result = mylist1 + mylist2
 print (result)
- numbers = [146,345,789,563,678,100,980]
+ numbers = [146, 345, 789, 563, 678, 100, 980]
 first = numbers[0]
-middle = numbers[len(numbers)//2]   
+middle = numbers[len(numbers) // 2]   # middle element
 last = numbers[-1]
 new_list = [first, middle, last]
 print(new_list)
@@ -35,9 +35,14 @@ duplicats = nums * 2
 print (duplicats)
 
 
-## 7. Swap First and Last Elements of a List
-##Given a list of numbers, swap the first and last elements.
+# 7. Swap First and Last Elements of a List
+# Given a list of numbers, swap the first and last elements.
+
+nums = [12, 45, 78, 90, 33]
+
+# swap first and last
 nums[0], nums[-1] = nums[-1], nums[0]
+
 print(nums)
 
 ## 8. Slice a Tuple
