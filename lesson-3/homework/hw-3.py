@@ -9,7 +9,7 @@ mylist1 = [33,456,687]
 mylist2 =[78,98,645]
 result = mylist1 + mylist2
 print (result)
-##3 numbers = [146,345,789,563,678,100,980]
+ numbers = [146,345,789,563,678,100,980]
 first = numbers[0]
 middle = numbers[len(numbers)//2]   
 last = numbers[-1]
